@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A | sort -t. -k1.2,1nr -k2 | awk 'NR == NR_ {print $1; exit}; NR == 1 {print $1 "," " "; next}; $1 ~ /\/$/ {print $1 "," " "; next} {print $1 "," " "} END {print ""}'
+echo $(ls -A | sort -t. -k1.2,1nr -k2 | tr '\n' ',' | sed 's/.$//')
