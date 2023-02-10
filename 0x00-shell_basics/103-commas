@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | awk 'BEGIN { FS = "/" } { if ($0 == ".") printf("%.0s%.0s/, ", $0, ""); else if ($0 == "..") printf("%.0s%.0s/, ", $0, ""); else printf("%s%s", $0, (NR == 1 ? "" : ", ")) } END { print "" }' | sort -f -t/ -k1,1
+ls -amp
