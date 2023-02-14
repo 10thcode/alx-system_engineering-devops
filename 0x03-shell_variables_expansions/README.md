@@ -22,3 +22,5 @@
 
 10-love_exponent_breath: a script that displays the result of BREATH to the power LOVE
 
+12-combinations: a script that prints all possible combinations of two letters, except oo.
+
