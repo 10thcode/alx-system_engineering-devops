@@ -9,3 +9,6 @@ This program will assign a random number to the variable n each time it is execu
 ## 2-print_alphabet.c:
  a program that prints the alphabet in lowercase
 
+## 3-print_alphabets.c:
+a program that prints the alphabet in lowercase, and then in uppercase
+
