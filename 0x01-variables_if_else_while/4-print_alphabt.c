@@ -6,7 +6,7 @@
  * Description: a program that prints
  * the alphabet in lowercase except q and e
  *
- * Return: Always return 0 (Success) 
+ * Return: Always return 0 (Success)
  */
 int main(void)
 {
