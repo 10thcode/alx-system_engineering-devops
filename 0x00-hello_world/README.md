@@ -6,3 +6,5 @@
 
 2-assembler: a script that generates the assembly code of a C code and save it in an output file. The C file name will be saved in the variable main.c
 
+3-name: a script that compiles a C file and creates an executable named cisfun.
+
