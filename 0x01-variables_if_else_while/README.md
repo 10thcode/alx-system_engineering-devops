@@ -32,3 +32,6 @@ a program that prints all possible combinations of single-digit numbers, separat
 ## 100-print_comb3.c:
 a program that prints all possible different combinations of two digits. separated by ,.
 
+## 101-print_comb4.c:
+a program that prints all possible different combinations of three digits. separated by ,.
+
