@@ -23,7 +23,8 @@ int main(void)
 			third_number = 0;
 			while (third_number < 10)
 			{
-				if (third_number <= sec_number || sec_number <= number);
+				if (third_number <= sec_number || sec_number <= number)
+					;
 				else
 				{
 					putchar(number + 48);
