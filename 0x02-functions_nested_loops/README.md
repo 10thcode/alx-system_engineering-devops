@@ -18,3 +18,6 @@ a function that checks for alphabetic character.
 ## 5-sign.c:
 a function that prints the sign of a number.
 
+## 6-abs.c:
+a function that computes the absolute value of an integer.
+
