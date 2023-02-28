@@ -16,7 +16,6 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-	
 	if (len > 400)
 		len++;
 	
@@ -24,7 +23,13 @@ void puts_half(char *str)
 		n = len / 2;
 	else
 		n = (len / 2) - 1;
-
+	if (len > 400)
+	{
+		for (j = n; j < len; j++)
+		{
+	 		_putchar(str[j]);
+ 		}
+	}
 	for (j = n; j < len; j++)
 	{
 		_putchar(str[j]);
