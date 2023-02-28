@@ -12,9 +12,19 @@ void rev_string(char *s)
 	int len = 0;
 	char srev[120];
 
+	for (i = 0; s[i]; i++)
+	{
+		len++;
+	}
+
 	for (i = 0; i < len; i++)
 	{
-		srev[i] = s[len - 1 - i];
+		srev[i] = s[(len - i) - 1];
 	}
 	srev[i] = '\0';
+
+	for (i = 0; i <= len; i++)
+	{
+	    s[i] = srev[i];
+	}
 }
