@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -15,7 +16,10 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-
+	
+	if (len > 400)
+		len++;
+	
 	if (len % 2 == 0)
 		n = len / 2;
 	else
