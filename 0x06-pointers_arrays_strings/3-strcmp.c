@@ -11,14 +11,12 @@
 int _strcmp(char *s1, char *s2)
 {
 	int i;
-	int sum1 = 0;
-	int sum2 = 0;
 
-	for (i = 0; s1[i]; i++)
-		sum1 += s1[i];
+	for (i = 0; s1[i] || s2[i]; i++)
+	{
+		if (s1[i] != s2[i])
+			break;
+	}
 
-	for (i = 0; s2[i]; i++)
-		sum2 += s2[i];
-
-	return (sum1 - sum2);
+	return (s1[i] - s2[i]);
 }
