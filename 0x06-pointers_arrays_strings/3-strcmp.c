@@ -6,7 +6,7 @@
  * @s2: string 2
  * Return: negative number if s1 < s2,
  * positive number if s1 > s2
- * and 0 if s1 is equal to s2. 
+ * and 0 if s1 is equal to s2.
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -20,5 +20,5 @@ int _strcmp(char *s1, char *s2)
 	for (i = 0; s2[i]; i++)
 		sum2 += s2[i];
 
-	return(sum1 - sum2);
+	return (sum1 - sum2);
 }
