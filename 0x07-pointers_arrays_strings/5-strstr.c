@@ -20,7 +20,6 @@ char *_strstr(char *haystack, char *needle)
 	{
 		for (j = j; haystack[j]; j++)
 		{
-			printf("%c-%c\n", haystack[j], needle[i]);
 			if (needle[i] == haystack[j])
 			{
 				if (i == 0)
