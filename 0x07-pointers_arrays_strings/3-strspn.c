@@ -29,9 +29,6 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-
-		if (s[j] == '\0')
-			return (0);
 	}
 
 	return (last_seg);
