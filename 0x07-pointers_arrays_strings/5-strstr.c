@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stddef.h>
 
 /**
  * _strstr - locates a substring.
@@ -30,7 +28,7 @@ char *_strstr(char *haystack, char *needle)
 			i = 0;
 		}
 		if (haystack[j] == '\0' && i == 0)
-			return (NULL);
+			return (0);
 	}
 
 	return (substring);
