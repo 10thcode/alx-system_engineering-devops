@@ -10,26 +10,18 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int last_seg;
 	unsigned int i, j;
 
-	last_seg = 0;
-
-	for (i = 0; accept[i]; i++)
+	for (i = 0; s[i]; i++)
 	{
-		for (j = 0; s[j]; j++)
+		for (j = 0; accept[j]; j++)
 		{
-			if (s[j] == accept[i])
-			{
-				if (j >= last_seg)
-				{
-					last_seg = j + 1;
-					break;
-				}
+			if (s[i] == accept[j])
 				break;
-			}
 		}
+		if (!accept[j])
+			break;
 	}
 
-	return (last_seg);
+	return (i);
 }
