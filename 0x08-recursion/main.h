@@ -8,3 +8,5 @@ void _print_rev_recursion(char *s);
 int _putchar(char c);
 int is_divisible(int n, int i);
 int is_palindrome(char *s);
+int _strlen_recursion(char *s);
+int compare(char *str1, char* str2);
