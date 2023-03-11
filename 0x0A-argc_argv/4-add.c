@@ -36,18 +36,20 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-
-	for (i = 1; i < argc; i++)
+	else
 	{
-		if (is_num(argv[i]))
-			sum += atoi(argv[i]);
-		else
+		for (i = 1; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
+			if (is_num(argv[i]))
+				sum += atoi(argv[i]);
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-	}
 
-	printf("%i\n", sum);
+		printf("%i\n", sum);
+	}
 	return (0);
 }
