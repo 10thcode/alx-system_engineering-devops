@@ -3,6 +3,24 @@
 #include <stdlib.h>
 
 /**
+ * is_num - check if a string is a number
+ * @s: the string
+ * Return: 1 if s is a number, otherwise return 0
+ */
+int is_num(char *s)
+{
+	while (*s)
+	{
+		if (*s >= '0' && *s <= '9')
+			s++;
+		else
+			return (0);
+	}
+
+	return (1);
+}
+
+/**
  * main - entry point
  * @argc: argument count
  * @argv: argument vector
@@ -19,37 +37,18 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (1);
 	}
-	else
-	{
-		for (i = 1; i < argc; i++)
-		{
-			if (is_num(argv[i]))
-				sum += atoi(argv[i]);
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		printf("%i\n", sum);
-	}
-	return (0);
-}
 
-/**
- * is_num - check if a string is a number
- * @s: the string
- * Return: 1 if s is a number, otherwise return 0
- */
-int is_num(char *s)
-{
-	while (*s)
+	for (i = 1; i < argc; i++)
 	{
-		if (*s >= '0' && *s <= '9')
-			s++;
+		if (is_num(argv[i]))
+			sum += atoi(argv[i]);
 		else
-			return (0);
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
 
-	return (1);
+	printf("%i\n", sum);
+	return (0);
 }
