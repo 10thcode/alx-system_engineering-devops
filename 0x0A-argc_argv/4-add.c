@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		}
 		printf("%i\n", sum);
 	}
-	return (sum);
+	return (0);
 }
 
 /**
