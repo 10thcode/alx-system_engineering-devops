@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 /**
- * add_nodeint - adds a new node at the beginning of a listint_t list.
- * @head: a double pointer to the begining of the list
+ * add_nodeint - calculates the number of elements in a linked listint_t list.
+ * @head: a pointer to the beginning of the list.
  * @n: the number to be added to the list.
+ * Return: the number of nodes.
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
