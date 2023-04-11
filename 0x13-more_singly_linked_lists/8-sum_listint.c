@@ -2,7 +2,8 @@
 #include <stddef.h>
 
 /**
- * sum_listint - calculates the sum of all the data (n) of a listint_t linked list.
+ * sum_listint - calculates the sum of all the
+ * data (n) of a listint_t linked list.
  * @head: the head of the list.
  * Return: sum of all data in the list.
  */
