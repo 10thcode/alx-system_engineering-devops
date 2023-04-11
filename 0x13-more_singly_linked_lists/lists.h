@@ -3,6 +3,8 @@
 
 #include <stddef.h>
 
+#define ZERO 0
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
