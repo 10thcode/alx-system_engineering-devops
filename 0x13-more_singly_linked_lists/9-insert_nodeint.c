@@ -28,10 +28,10 @@ listint_t *insert(listint_t *head, unsigned int index, int n)
 	static unsigned int i = ZERO;
 	listint_t *new;
 
-	if (head == NULL)
+	if (head == NULL || head->next == NULL)
 		return (NULL);
 
-	if (i == index)
+	if (i == index - 1)
 	{
 		new = malloc(sizeof(listint_t));
 
