@@ -44,7 +44,7 @@ listint_t *insert(listint_t *head, unsigned int index, int n)
 
 		new->n = n;
 		new->next = head->next;
-		head->next = new;
+		head = new;
 		return (new);
 	}
 
