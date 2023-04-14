@@ -31,7 +31,7 @@ listint_t *insert(listint_t *head, unsigned int index, int n)
 	if (head == NULL || head->next == NULL)
 		return (NULL);
 
-	if (i == index - 1)
+	if ( index == 0 || i + 1 == index)
 	{
 		new = malloc(sizeof(listint_t));
 
@@ -40,6 +40,14 @@ listint_t *insert(listint_t *head, unsigned int index, int n)
 			i = ZERO;
 			free(new);
 			return (NULL);
+		}
+
+		if (index == 0)
+		{
+			new->n = n;
+			new->next = head->next;
+			head = new;
+			return (new);
 		}
 
 		new->n = n;
