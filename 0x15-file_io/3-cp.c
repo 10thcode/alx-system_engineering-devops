@@ -81,7 +81,9 @@ void cpy(int src, int dest, char *src_name, char *dest_name)
 			exit(98);
 		}
 
-		if (write(dest, buffer, count) == -1)
+		count = write(dest, buffer, count);
+
+		if (count == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest_name);
 			exit(99);
