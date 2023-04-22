@@ -77,7 +77,7 @@ void cpy(int src, int dest, char *src_name, char *dest_name)
 
 		if (count == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read to %s\n", src_name);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src_name);
 			exit(98);
 		}
 
