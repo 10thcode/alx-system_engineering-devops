@@ -1,7 +1,7 @@
 #ifndef MAIN_H
-#define MIAN_H
+#define MAIN_H
 
-#define ZERO 0
+#include <stddef.h>
 
 unsigned int binary_to_uint(const char *b);
 int _pow(int base, int expo);
