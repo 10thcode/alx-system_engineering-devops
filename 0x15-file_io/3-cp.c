@@ -67,7 +67,8 @@ void _copy(int file_from, int file_to, char *str1, char *str2)
 	int n;
 	char buffer[BUF_SIZE];
 
-	do {
+	while (1)
+	{
 		n = read(file_from, buffer, BUF_SIZE);
 
 		if (n == -1)
@@ -83,5 +84,8 @@ void _copy(int file_from, int file_to, char *str1, char *str2)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str2);
 			exit(99);
 		}
-	} while (BUF_SIZE == n);
+
+		if (n < BUF_SIZE);
+			break;
+	}
 }
