@@ -85,7 +85,7 @@ void _copy(int file_from, int file_to, char *str1, char *str2)
 			exit(99);
 		}
 
-		if (n < BUF_SIZE);
+		if (n < BUF_SIZE)
 			break;
 	}
 }
