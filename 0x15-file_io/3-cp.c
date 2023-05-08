@@ -4,7 +4,7 @@
  * main - program entry point
  * @argc: argument count
  * @argv: argument vector
- * Return: Always return 1
+ * Return: Always return 0
  */
 int main(int argc, char *argv[])
 {
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	_close(file_from);
 	_close(file_to);
 
-	return (1);
+	return (0);
 }
 
 /**
