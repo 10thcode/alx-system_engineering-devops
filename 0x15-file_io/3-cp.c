@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * main - program entry point
  * @argc: argument count
