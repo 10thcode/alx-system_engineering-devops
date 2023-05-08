@@ -1,14 +1,12 @@
-#include "main.h"
-
 /**
  * main - program entry point
  * @argc: argument count
  * @argv: argument vector
- * Return: Always return 0
+ * Return: 0 if successfull
  */
 int main(int argc, char *argv[])
 {
-	int file_from, file_to;
+	int src, dest;
 
 	if (argc != 3)
 	{
@@ -16,35 +14,36 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	file_from = open(argv[1], O_RDONLY);
+	src = open(argv[1], O_RDONLY);
 
-	if (file_from == -1)
+	if (src == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 
-	file_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT | O_APPEND, 00664);
+	dest = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT | O_APPEND, 00664);
 
-	if (file_to == -1)
+	if (dest == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 
-	_copy(file_from, file_to, argv[1], argv[2]);
-	_close(file_from);
-	_close(file_to);
+	cpy(src, dest, argv[1], argv[2]);
+
+	close_fd(dest);
+	close_fd(src);
 
 	return (0);
 }
 
 /**
- * _close - closes a file descriptor with an error message
- * @fd: file descriptor
+ * close_fd - closes a file decriptor
+ * @fd: the file descriptor
  * Return: void
  */
-void _close(int fd)
+void close_fd(int fd)
 {
 	if (close(fd) == -1)
 	{
@@ -54,37 +53,37 @@ void _close(int fd)
 }
 
 /**
- * _copy - copy text from one file descriptor to the other
- * @file_from: the file descriptor to be copied from
- * @file_to: the file dexcriptor to be copied to
- * @str1: filename1
- * @str2: filename2
+ * cpy - copies the content of a file to another
+ * @src: the source
+ * @dest: the destination
+ * @src_name: name of source file
+ * @dest_name: name of destination file
  * Return: void
  */
-void _copy(int file_from, int file_to, char *str1, char *str2)
+void cpy(int src, int dest, char *src_name, char *dest_name)
 {
-	int n;
+	int count;
 	char buffer[1024];
 
 	while (1)
 	{
-		n = read(file_from, buffer, 1024);
+		count = read(src, buffer, 1024);
 
-		if (n == -1)
+		if (count == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", str1);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src_name);
 			exit(98);
 		}
 
-		n = write(file_to, buffer, n);
+		count = write(dest, buffer, count);
 
-		if (file_to == -1)
+		if (count == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str2);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest_name);
 			exit(99);
 		}
 
-		if (n < 1024)
+		if (count < 1024)
 			break;
 	}
 }
