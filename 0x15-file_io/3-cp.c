@@ -8,7 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	int file_from, file_to;
 
 	if (argc != 3)
@@ -25,7 +24,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, mode);
+	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 00664);
 
 	if (file_to == -1)
 	{
