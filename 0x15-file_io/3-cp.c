@@ -83,5 +83,5 @@ void _copy(int file_from, int file_to, char *str1, char *str2)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str2);
 			exit(99);
 		}
-	} while (n > 0);
+	} while (BUF_SIZE == n);
 }
