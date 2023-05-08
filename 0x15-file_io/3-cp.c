@@ -64,11 +64,11 @@ void _close(int fd)
 void _copy(int file_from, int file_to, char *str1, char *str2)
 {
 	int n;
-	char buffer[BUF_SIZE];
+	char buffer[1024];
 
 	while (1)
 	{
-		n = read(file_from, buffer, BUF_SIZE);
+		n = read(file_from, buffer, 1024);
 
 		if (n == -1)
 		{
@@ -84,7 +84,7 @@ void _copy(int file_from, int file_to, char *str1, char *str2)
 			exit(99);
 		}
 
-		if (n < BUF_SIZE)
+		if (n < 1024)
 			break;
 	}
 }
