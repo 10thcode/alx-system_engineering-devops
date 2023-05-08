@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	_copy(file_from, file_to);
+	_copy(file_from, file_to, argv[1], argv[2]);
 	_close(file_from);
 	_close(file_to);
 
@@ -58,9 +58,11 @@ void _close(int fd)
  * _copy - copy text from one file descriptor to the other
  * @file_from: the file descriptor to be copied from
  * @file_to: the file dexcriptor to be copied to
+ * @str1: filename1
+ * @str2: filename2
  * Return: void
  */
-void _copy(int file_from, int file_to)
+void _copy(int file_from, int file_to, char *str1, char *str2)
 {
 	int n;
 	char buffer[BUF_SIZE];
@@ -68,8 +70,18 @@ void _copy(int file_from, int file_to)
 	do {
 		n = read(file_from, buffer, BUF_SIZE);
 
-		if (n != -1)
-			write(file_to, buffer, n);
+		if (n == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", str1);
+			exit(98);
+		}
 
+		n = write(file_to, buffer, n);
+
+		if (file_to == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str2);
+			exit(99);
+		}
 	} while (n > 0);
 }
