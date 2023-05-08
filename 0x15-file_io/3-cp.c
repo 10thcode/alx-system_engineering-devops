@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 00664);
+	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 00664);
 
 	if (file_to == -1)
 	{
