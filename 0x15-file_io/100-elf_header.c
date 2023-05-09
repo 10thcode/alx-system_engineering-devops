@@ -21,13 +21,13 @@ int main(int argc, char *argv[])
 
 	if (fd == -1)
 	{
-		perror("Error opening file");
+		fprintf(stderr, "Error opening file\n");
 		exit(98);
 	}
 
 	if (bytes_read != sizeof(header))
 	{
-		perror("Error reading ELF header");
+		fprintf(stderr, "Error reading ELF header\n");
 		close(fd);
 		exit(98);
 	}
@@ -75,8 +75,7 @@ void print_elf_header(const Elf64_Ehdr *header)
 			"UNIX - System V" : "Others");
 	printf("  ABI Version:                       %d\n",
 			header->e_ident[EI_ABIVERSION]);
-	printf("  Type:                              %d (EXEC)\n",
-			header->e_type);
+	printf("  Type:                              EXEC (Executable file)\n");
 	printf("  Entry point address:               0x%lx\n",
 			(unsigned long)header->e_entry);
 }
