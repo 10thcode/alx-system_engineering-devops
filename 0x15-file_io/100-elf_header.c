@@ -16,27 +16,27 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		fprintf(stderr, "Usage: %s elf_filename\n", argv[0]);
-		return (1);
+		exit(98);
 	}
 
 	if (fd == -1)
 	{
 		perror("Error opening file");
-		return (98);
+		exit(98);
 	}
 
 	if (bytes_read != sizeof(header))
 	{
 		perror("Error reading ELF header");
 		close(fd);
-		return (98);
+		exit(98);
 	}
 
-	if (memcmp(header.e_ident, ELFMAG, SELFMAG) != 0)
+	if (_memcmp(header.e_ident, ELFMAG, SELFMAG) != 0)
 	{
 		fprintf(stderr, "Error: Not an ELF file\n");
 		close(fd);
-		return (98);
+		exit(98);
 	}
 
 	print_elf_header(&header);
@@ -79,4 +79,23 @@ void print_elf_header(const Elf64_Ehdr *header)
 			header->e_type);
 	printf("  Entry point address:               0x%lx\n",
 			(unsigned long)header->e_entry);
+}
+
+/**
+ * _memcmp - copies memory area.
+ * @s1: memory destination
+ * @s2: memory source
+ * @n: number of bytes to copy from src
+ * Return: pointer to dest
+ */
+int _memcmp(unsigned char *s1, char *s2, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++, s1++, s2++)
+	{
+		if (*s1 != *s2)
+			return (*s1 < *s2 ? -1 : 1);
+	}
+	return (0);
 }
