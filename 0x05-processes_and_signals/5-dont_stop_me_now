@@ -2,5 +2,5 @@
 # stops 4-to_infinity_and_beyond process
 if pid=$(pgrep -f 4-to_infinity_and_beyond)
 then
-	kill -15 $pid
+	kill $pid
 fi
