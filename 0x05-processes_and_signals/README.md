@@ -1,6 +1,8 @@
 
 # 0x05. Processes and signals
 
+This project is an introduction to Linux processes and signals. How to start, monitor and stop processes in Linux were discussed in this project. Also, how to hadles various signals were discussed in this project.
+
 ## Tasks
 
 - ***[0-what-is-my-pid](https://github.com/10thcode/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/0-what-is-my-pid)***
@@ -158,7 +160,7 @@
     A Bash (init) script that manages `manage_my_process`.
 
     - ***[manage_my_process](https://github.com/10thcode/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/manage_my_process):*** A Bash script that
-    indefinitely writes I am alive! to the file /tmp/my_process
+    indefinitely writes **I am alive!** to the file `/tmp/my_process`
 
     **Usage**: `sudo ./101-manage_my_process {start|stop|restart}`
 
