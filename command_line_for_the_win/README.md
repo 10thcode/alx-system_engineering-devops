@@ -15,6 +15,8 @@ This project is an exercise on how to use the command line or terminal to perfor
 - Use the `put` command to upload files from local machine to the remote server
 - Use the `exit` command to exit sftp
 
+## Tasks
+
 - ***[0-first_9_tasks.png](https://github.com/10thcode/alx-system_engineering-devops/blob/master/command_line_for_the_win/0-first_9_tasks.png)***
 
     First 9 tasks.
@@ -24,5 +26,4 @@ This project is an exercise on how to use the command line or terminal to perfor
     Next 9 tasks. (18 in total)
 
 - ***[2-next_9_tasks.png](https://github.com/10thcode/alx-system_engineering-devops/blob/master/command_line_for_the_win/2-next_9_tasks.png)***
-
     Next 9 tasks. (27 in total)
