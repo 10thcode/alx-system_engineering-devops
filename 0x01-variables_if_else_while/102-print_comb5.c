@@ -11,46 +11,38 @@
  */
 int main(void)
 {
-	int number = 0;
-	int sec_number;
-	int third_number;
-	int fourth_number;
+	int fn, sn, fd, print_sep = 0;
 
-	while (number < 10)
+	for (fn = 0; fn < 100; fn++)
 	{
-		sec_number = 0;
-		while (sec_number < 10)
+		for (sn = 0; sn < 100; sn++)
 		{
-			third_number = 0;
-			while (third_number < 10)
+			if (fn < sn)
 			{
-				fourth_number = 0;
-				while (fourth_number < 10)
+				if (print_sep)
 				{
-					/* if (fourth_number <= third_number); */
-					/* else */
-					/* { */
-						putchar(number + 48);
-						putchar(sec_number + 48);
-						putchar(' ');
-						putchar(third_number + 48);
-						putchar(fourth_number + 48);
-					/*	if (sec_number != 8)*/
-					/*	{*/
-							putchar(',');
-							putchar(' ');
-					/*	}*/
-				/*	}*/
-					fourth_number++;
+					putchar(',');
+					putchar(' ');
 				}
-				third_number++;
+				if (fn < 10)
+					fd = 0;
+				else
+					for (fd = fn; fd >= 10; fd /= 10)
+						;
+				putchar(fd + 48);
+				putchar((fn % 10) + 48);
+				putchar(' ');
+				if (sn < 10)
+					fd = 0;
+				else
+					for (fd = sn; fd >= 10; fd /= 10)
+						;
+				putchar(fd + 48);
+				putchar((sn % 10) + 48);
+				print_sep = 1;
 			}
-			sec_number++;
 		}
-		number++;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
