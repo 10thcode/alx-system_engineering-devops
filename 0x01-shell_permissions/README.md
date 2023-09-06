@@ -1,10 +1,10 @@
 
-# Shell Permissions
-
-***0x01. Shell, permissions***
+# 0x01. Shell, permissions
 
 This project is an introduction to permissions on Linux operating system.
 How to check, add and remove permissions in Bash were discussed in this project.
+
+## Tasks
 
  - ***[0-iam_betty](https://github.com/10thcode/alx-system_engineering-devops/blob/master/0x01-shell_permissions/0-iam_betty)***
 

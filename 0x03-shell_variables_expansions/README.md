@@ -1,7 +1,9 @@
 
-# 0x03. Shell, Init Files, Variables and Expansions
+# 0x03. Shell, init files, variables and expansions
 
 In this project, how to set and unset environment variables were discussed. Also, how command expansion works in shell were discussed.
+
+## Tasks
 
 - ***[0-alias](https://github.com/10thcode/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/0-alias)***
 

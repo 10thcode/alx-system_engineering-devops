@@ -5,6 +5,8 @@ How to work with various loops like for loop and while loop
 were introduced in this project.
 How to parse data into useful infomation was also discussed.
 
+## Tasks
+
 - ***[0-RSA_public_key.pub](https://github.com/10thcode/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/0-RSA_public_key.pub)***
 
     My public SSH key

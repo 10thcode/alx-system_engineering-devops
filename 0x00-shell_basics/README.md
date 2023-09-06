@@ -1,10 +1,10 @@
 
-# Shell Basics
-
-***0x00. Shell, basics***
+# 0x00. Shell, basics
 
 This project is an introduction to Shell and Linux operating system.
 Basic shell and linux commands like cat and pwd were introduced in the project.
+
+## Tasks
 
 - ***[0-current_working_directory](https://github.com/10thcode/alx-system_engineering-devops/blob/master/0x00-shell_basics/0-current_working_directory)***
 

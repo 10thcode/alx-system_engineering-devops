@@ -4,6 +4,8 @@
 This project is an introduction to shell redirection.
 How to redirect outputs and inputs were discussed in this project.
 
+## Tasks
+
 - ***[0-hello_world](https://github.com/10thcode/alx-system_engineering-devops/blob/master/0x02-shell_redirections/0-hello_world)***
 
     A script that prints *“Hello, World”*, followed by a new line to the standard output.
