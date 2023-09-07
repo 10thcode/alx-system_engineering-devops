@@ -13,3 +13,4 @@ void print_to_98(int n);
 void print_times_table(int n);
 void print_num(int num);
 void print_lnum(long int num);
+void print_ulnum(unsigned long int num);
