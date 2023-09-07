@@ -8,11 +8,11 @@
 int main(void)
 {
 	unsigned long int sum = 0;
-	long int fn = 1, sn = 1, i, tmp, print_sep = 0;
+	long int fn = 1, sn = 1, i, tmp;
 
 	for (; sn <= 4000000; i++)
 	{
-		if (sn % 2 = 0)
+		if (sn % 2 == 0)
 			sum += sn;
 
 		tmp = fn;
