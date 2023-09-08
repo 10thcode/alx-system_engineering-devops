@@ -5,6 +5,10 @@ C Programming - Functions in details and nested loops.
 
 ## Tasks
 
+- ***[main.h](https://github.com/10thcode/alx-low_level_programming/blob/main/0x04-more_functions_nested_loops/main.h)***
+
+    The header file containing all the function prototypes
+
 - ***[0-isupper.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x04-more_functions_nested_loops/0-isupper.c)***
 
     A function that checks for uppercase character.
