@@ -7,31 +7,39 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1;
-	int result = 0;
+	int num_of_minus = 0;
+	int result = 0, i;
+	unsigned int j;
+	int start, end;
 
-	if (*s == '-')
+	if (*s == '\0')
+		return (result);
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		sign = -1;
-		s++;
-	}
-	else if (*s == '+')
-	{
-		s++;
+		if (s[i] >= 48 && s[i] <= 57)
+			break;
+		if (s[i] == '-')
+			num_of_minus++;
 	}
 
-	while (*s)
+	for (i = 0; s[i] != 0; i++)
 	{
-		if (*s >= '0' && *s <= '9')
+		if (s[i] >= 48 && s[i] <= 57)
 		{
-			result = result * 10 + (*s - '0');
-			s++;
-		}
-		else
-		{
+			start = i;
+			while (s[i] >= 48 && s[i] <= 57)
+				i++;
+			end = i;
 			break;
 		}
 	}
 
-	return (result * sign);
+	for (j = 1, i = end - 1; i >= start; i--, j *= 10)
+		result += (s[i] - 48) * j;
+
+	if (result != -2147483648)
+		result *= num_of_minus % 2 == 1 ? -1 : 1;
+
+	return (result);
 }
