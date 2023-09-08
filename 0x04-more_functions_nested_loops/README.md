@@ -233,3 +233,29 @@ C Programming - Functions in details and nested loops.
      #########
     ##########
     ```
+
+- ***[100-prime_factor.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x04-more_functions_nested_loops/100-prime_factor.c)***
+
+    A program that finds and prints the largest prime factor of the number `612852475143`.
+
+- ***[101-print_number.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x04-more_functions_nested_loops/101-print_number.c)***
+
+    A function that prints an integer.
+
+    *Example*
+    ```
+    ...
+    print_number(98);
+    print_number(1024);
+    print_number(0);
+    print_number(-98);
+    ...
+    ```
+
+    *Output*
+    ```
+    98
+    1024
+    0
+    -98
+    ```
