@@ -5,11 +5,11 @@ C Programming - Pointers, arrays and strings.
 
 ## Tasks
 
-- ***[main.h]()***
+- ***[main.h](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/main.h)***
 
     The header file containing all the function prototypes
 
-- ***[0-reset_to_98.c]()***
+- ***[0-reset_to_98.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/0-reset_to_98.c)***
 
     A function that takes a pointer to an int as parameter and
     updates the value it points to to 98.
@@ -30,7 +30,7 @@ C Programming - Pointers, arrays and strings.
     n=98
     ```
 
-- ***[1-swap.c]()***
+- ***[1-swap.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/1-swap.c)***
 
     A function that swaps the values of two integers.
 
@@ -50,7 +50,7 @@ C Programming - Pointers, arrays and strings.
     a=42, b=98
     ```
 
-- ***[2-strlen.c]()***
+- ***[2-strlen.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/2-strlen.c)***
 
     A function that returns the length of a string.
 
@@ -68,7 +68,7 @@ C Programming - Pointers, arrays and strings.
     16
     ```
 
-- ***[3-puts.c]()***
+- ***[3-puts.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/3-puts.c)***
 
     A function that prints a string, followed by a new line, to `stdout`.
 
@@ -85,7 +85,7 @@ C Programming - Pointers, arrays and strings.
     I do not fear computers. I fear the lack of them - Isaac Asimov
     ```
 
-- ***[4-print_rev.c]()***
+- ***[4-print_rev.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/4-print_rev.c)***
 
     A function that prints a string, in reverse, followed by a new line.
 
@@ -102,7 +102,7 @@ C Programming - Pointers, arrays and strings.
     vomisA caasI - meht fo kcal eht raef I .sretupmoc raef ton od I
     ```
 
-- ***[5-rev_string.c]()***
+- ***[5-rev_string.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/5-rev_string.c)***
 
     A function that reverses a string.
 
@@ -122,7 +122,7 @@ C Programming - Pointers, arrays and strings.
     loohcS yM
     ```
 
-- ***[6-puts2.c]()***
+- ***[6-puts2.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/6-puts2.c)***
 
     A function that prints every other character of a string, starting with the first character
 
@@ -139,7 +139,7 @@ C Programming - Pointers, arrays and strings.
     02468
     ```
 
-- ***[7-puts_half.c]()***
+- ***[7-puts_half.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/7-puts_half.c)***
 
     A function that prints half of a string.
 
@@ -156,7 +156,7 @@ C Programming - Pointers, arrays and strings.
     56789
     ```
 
-- ***[8-print_array.c]()***
+- ***[8-print_array.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/8-print_array.c)***
 
     A function that prints `n` elements of an array of integers.
 
@@ -178,7 +178,7 @@ C Programming - Pointers, arrays and strings.
     98, 402, -198, 298, -1024
     ```
 
-- ***[9-strcpy.c]()***
+- ***[9-strcpy.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/9-strcpy.c)***
 
     A function that copies the string pointed to by `src`,
     including the terminating null byte (\0), to the buffer pointed to by `dest`.
@@ -197,4 +197,34 @@ C Programming - Pointers, arrays and strings.
     ```
     First, solve the problem. Then, write the code
     First, solve the problem. Then, write the code
+    ```
+
+- ***[100-atoi.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/100-atoi.c)***
+
+    A function that convert a string to an integer.
+
+    *Example*
+    ```
+    ...
+    nb = _atoi("98");
+    nb = _atoi("-402");
+    ...
+    ```
+
+    *Output*
+    ```
+    98
+    -402
+    ```
+
+- ***[101-keygen.c](https://github.com/10thcode/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/101-keygen.c)***
+
+    A program that generates random valid passwords for the program 101-crackme.
+
+    *Example*
+    ```
+    julien@ubuntu:~/0x05$ gcc -Wall -pedantic -Werror -Wextra 101-keygen.c -o 101-keygen
+    julien@ubuntu:~/0x05$ ./101-crackme "`./101-keygen`"
+    Tada! Congrats
+    julien@ubuntu:~/0x05$ 
     ```
