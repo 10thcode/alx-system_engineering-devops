@@ -57,6 +57,10 @@ This repository contains projects from ALX SE Course on
 
     Working with configuration management tools (Puppet).
 
+- ### [0x0B-ssh](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x0B-ssh)
+
+    Generating SSH key pairs. Connecting with remote computers. SSH tunnelling.
+
 - ### [attack_is_the_best_defense](https://github.com/10thcode/alx-system_engineering-devops/tree/master/attack_is_the_best_defense)
 
     ARP spoofing and sniffing unencrypted traffic. Dictionary attack.
