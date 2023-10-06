@@ -53,11 +53,15 @@ This repository contains projects from ALX SE Course on
     This project introduced how to work with **networking utilities**
     like `nc` and `netstat`.
 
-- ### [command_line_for_the_win](https://github.com/10thcode/alx-system_engineering-devops/tree/master/command_line_for_the_win)
+- ### [0x0A-configuration_management](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x0A-configuration_management)
 
-    This project is an **exercise** on how to use the command line or
-    terminal to perform some tasks.
+    Working with configuration management tools (Puppet).
 
 - ### [attack_is_the_best_defense](https://github.com/10thcode/alx-system_engineering-devops/tree/master/attack_is_the_best_defense)
 
     ARP spoofing and sniffing unencrypted traffic. Dictionary attack.
+
+- ### [command_line_for_the_win](https://github.com/10thcode/alx-system_engineering-devops/tree/master/command_line_for_the_win)
+
+    This project is an **exercise** on how to use the command line or
+    terminal to perform some tasks.
