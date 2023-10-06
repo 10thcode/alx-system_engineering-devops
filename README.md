@@ -44,13 +44,20 @@ This repository contains projects from ALX SE Course on
 - ### [0x07-networking_basics](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x07-networking_basics)
 
     This project is an introduction to **networking**.
-    Basic networking concepts like `OSI Model`, `MAC address` and `IP address`, `TCP` and `UDP` and `Ports`
+    Basic networking concepts like `OSI Model`,
+    `MAC address` and `IP address`, `TCP` and `UDP` and `Ports`
     were discussed in this project.
 
 - ### [0x08-networking_basics_2](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x08-networking_basics_2)
 
-    This project introduced how to work with **networking utilities** like `nc` and `netstat`.
+    This project introduced how to work with **networking utilities**
+    like `nc` and `netstat`.
 
 - ### [command_line_for_the_win](https://github.com/10thcode/alx-system_engineering-devops/tree/master/command_line_for_the_win)
 
-    This project is an **exercise** on how to use the command line or terminal to perform some tasks.
+    This project is an **exercise** on how to use the command line or
+    terminal to perform some tasks.
+
+- ### [attack_is_the_best_defense](https://github.com/10thcode/alx-system_engineering-devops/tree/master/attack_is_the_best_defense)
+
+    ARP spoofing and sniffing unencrypted traffic. Dictionary attack.
