@@ -69,6 +69,10 @@ This repository contains projects from ALX SE Course on
 
     Finding and fixing bugs in a web server.
 
+- ### [0x0E-web_stack_debugging_1](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x0E-web_stack_debugging_1)
+
+    Finding and fixing bug on a web server.
+
 - ### [attack_is_the_best_defense](https://github.com/10thcode/alx-system_engineering-devops/tree/master/attack_is_the_best_defense)
 
     ARP spoofing and sniffing unencrypted traffic. Dictionary attack.
