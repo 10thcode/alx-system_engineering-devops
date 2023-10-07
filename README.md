@@ -65,6 +65,10 @@ This repository contains projects from ALX SE Course on
 
     Installing and configuring web server (Apache, Nginx). Working with HTTP.
 
+- ### [0x0D-web_stack_debugging_0](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0)
+
+    Finding and fixing bugs in a web server.
+
 - ### [attack_is_the_best_defense](https://github.com/10thcode/alx-system_engineering-devops/tree/master/attack_is_the_best_defense)
 
     ARP spoofing and sniffing unencrypted traffic. Dictionary attack.
