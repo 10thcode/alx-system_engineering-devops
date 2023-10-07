@@ -61,6 +61,10 @@ This repository contains projects from ALX SE Course on
 
     Generating SSH key pairs. Connecting with remote computers. SSH tunnelling.
 
+- ### [0x0C-web_server](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x0C-web_server)
+
+    Installing and configuring web server (Apache, Nginx). Working with HTTP.
+
 - ### [attack_is_the_best_defense](https://github.com/10thcode/alx-system_engineering-devops/tree/master/attack_is_the_best_defense)
 
     ARP spoofing and sniffing unencrypted traffic. Dictionary attack.
