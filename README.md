@@ -73,6 +73,10 @@ This repository contains projects from ALX SE Course on
 
     Finding and fixing bug on a web server.
 
+- ### [0x0F-load_balancer](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x0F-load_balancer)
+
+    Setting up a load balancer (HAProxy) to redirect traffic to multiple servers.
+
 - ### [attack_is_the_best_defense](https://github.com/10thcode/alx-system_engineering-devops/tree/master/attack_is_the_best_defense)
 
     ARP spoofing and sniffing unencrypted traffic. Dictionary attack.
