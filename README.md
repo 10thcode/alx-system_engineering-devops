@@ -77,6 +77,11 @@ This repository contains projects from ALX SE Course on
 
     Setting up a load balancer (HAProxy) to redirect traffic to multiple servers.
 
+- ### [0x10-https_ssl](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x10-https_ssl)
+
+    Generating SSL/TLS certificate using LetsEncript's certbot.
+    Configuring HTTPS on a load balancer (SSL/TLS Termination).
+
 - ### [attack_is_the_best_defense](https://github.com/10thcode/alx-system_engineering-devops/tree/master/attack_is_the_best_defense)
 
     ARP spoofing and sniffing unencrypted traffic. Dictionary attack.
