@@ -2,7 +2,7 @@
 """
 Make API request
 """
-import requests
+from requests import get
 
 
 def top_ten(subreddit):
@@ -10,12 +10,10 @@ def top_ten(subreddit):
     Queries the Reddit API and prints the titles of the
     first 10 hot posts listed for a given subreddit
     """
-    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    res = requests.get(url, allow_redirects=False,
-                       headers={"User-Agent": "Python-Request"})
-    if res.status_code == 200:
-    #    for post in res.json().get("data").get("children")[:10]:
-    #        print(post.get("data").get("title"))
-        print("OK", end="")
-    else:
-        print("None")
+    with get(f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10",
+             allow_redirects=False) as res:
+        if (res.status_code == 200):
+            for item in res.json()["data"]["children"]:
+                print(item["data"]["title"])
+        else:
+            print("None")
