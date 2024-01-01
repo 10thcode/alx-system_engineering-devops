@@ -1,7 +1,7 @@
 
 # Command line for the win
 
-This project is an exercise on how to use the command line or terminal to perform some task.
+Using the command line to perform basic task.
 
 ### How to use sftp to upload files from local machine to remote server?
 
