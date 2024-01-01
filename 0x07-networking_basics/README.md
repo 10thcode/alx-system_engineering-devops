@@ -1,7 +1,7 @@
 
 # 0x07. Networking basics #0
 
-This project is an introduction to networking. Basic networking concepts like OSI Model, MAC address and IP address, TCP and UDP and Ports were discussed in this project.
+Introduction to networking and the OSI model.
 
 ## Tasks
 
