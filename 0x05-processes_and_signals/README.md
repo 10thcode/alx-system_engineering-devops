@@ -1,7 +1,7 @@
 
 # 0x05. Processes and signals
 
-This project is an introduction to Linux processes and signals. How to start, monitor and stop processes in Linux were discussed in this project. Also, how to hadles various signals were discussed in this project.
+Introduction to Linux processes and signals.
 
 ## Tasks
 
