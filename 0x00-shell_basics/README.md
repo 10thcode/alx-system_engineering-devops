@@ -1,8 +1,7 @@
 
 # 0x00. Shell, basics
 
-This project is an introduction to Shell and Linux operating system.
-Basic shell and linux commands like cat and pwd were introduced in the project.
+Introduction to Bash, and basic Linux commands.
 
 ## Tasks
 
