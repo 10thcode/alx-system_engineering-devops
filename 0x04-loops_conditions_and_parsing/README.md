@@ -1,9 +1,7 @@
 
 # 0x04. Loops, conditions and parsing
 
-How to work with various loops like for loop and while loop
-were introduced in this project.
-How to parse data into useful infomation was also discussed.
+Working with loops, conditions and data parsing.
 
 ## Tasks
 
