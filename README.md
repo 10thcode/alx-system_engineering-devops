@@ -1,57 +1,44 @@
 # ALX System Engineering and DevOps
 
-This repository contains projects from ALX SE Course on
-**System Engineering** and **DevOps**.
+Projects from ALX SE Course on **System Engineering** and **DevOps**.
 
 ## Projects
 
 - ### [0x00-shell_basics](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 
-    This project is an introduction to **Shell** and **Linux** operating system.
-    Basic shell and linux commands like `cat` and `pwd` were introduced in the project.
+    Introduction to **Bash**, and basic **Linux** commands.
 
 - ### [0x01-shell_permissions](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x01-shell_permissions)
 
-    This project is an introduction to **permissions** on Linux operating system.
-    How to check, add and remove permissions in **Bash** were discussed in this project.
+     Adding and removing file **permissions** on Linux.
 
 - ### [0x02-shell_redirections](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x02-shell_redirections)
 
-    This project is an introduction to **shell redirection**.
-    How to redirect outputs and inputs were discussed in this project.
+    Introduction to **redirections** on Linux.
 
 - ### [0x03-shell_variables_expansions](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x03-shell_variables_expansions)
 
-    In this project, how to set and unset **environment variables** were discussed.
-    Also, how command expansion works in shell were discussed.
+    Introduction to **environment variables and expansions** on Linux.
 
 - ### [0x04-loops_conditions_and_parsing](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x04-loops_conditions_and_parsing)
 
-    How to work with various loops like `for loop` and `while loop` were introduced in this project.
-    How to **parse** data into useful infomation was also discussed. 
+    Working with loops, conditions and data parsing.
 
 - ### [0x05-processes_and_signals](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x05-processes_and_signals)
 
-    This project is an introduction to Linux **processes** and **signals**.
-    How to start, monitor and stop processes in Linux were discussed in this project.
-    Also, how to hadles various signals were discussed in this project.
+    Introduction to Linux **processes** and **signals**.
 
 - ### [0x06-regular_expressions](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x06-regular_expressions)
 
-    **Regular expressions** or **Regex** were introduced in this project.
-    How to write and read regular expressions were discussed.
+    Introduction to **Regular expressions** or **Regex**.
 
 - ### [0x07-networking_basics](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x07-networking_basics)
 
-    This project is an introduction to **networking**.
-    Basic networking concepts like `OSI Model`,
-    `MAC address` and `IP address`, `TCP` and `UDP` and `Ports`
-    were discussed in this project.
+    Introduction to **networking** and the OSI model.
 
 - ### [0x08-networking_basics_2](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x08-networking_basics_2)
 
-    This project introduced how to work with **networking utilities**
-    like `nc` and `netstat`.
+    Working with **networking utilities**.
 
 - ### [0x0A-configuration_management](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x0A-configuration_management)
 
@@ -59,11 +46,11 @@ This repository contains projects from ALX SE Course on
 
 - ### [0x0B-ssh](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x0B-ssh)
 
-    Generating SSH key pairs. Connecting with remote computers. SSH tunnelling.
+    Generating SSH key pairs, connecting with remote servers, and SSH tunnelling.
 
 - ### [0x0C-web_server](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x0C-web_server)
 
-    Installing and configuring web server (Apache, Nginx). Working with HTTP.
+    Installing and configuring web servers (Apache, Nginx), and working with HTTP.
 
 - ### [0x0D-web_stack_debugging_0](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0)
 
@@ -79,14 +66,13 @@ This repository contains projects from ALX SE Course on
 
 - ### [0x10-https_ssl](https://github.com/10thcode/alx-system_engineering-devops/tree/master/0x10-https_ssl)
 
-    Generating SSL/TLS certificate using LetsEncript's certbot.
-    Configuring HTTPS on a load balancer (SSL/TLS Termination).
+    Generating SSL/TLS certificate using LetsEncript's certbot,
+    and configuring HTTPS on a load balancer (SSL/TLS Termination).
 
 - ### [attack_is_the_best_defense](https://github.com/10thcode/alx-system_engineering-devops/tree/master/attack_is_the_best_defense)
 
-    ARP spoofing and sniffing unencrypted traffic. Dictionary attack.
+    ARP spoofing and sniffing unencrypted traffic, and performing dictionary attack.
 
 - ### [command_line_for_the_win](https://github.com/10thcode/alx-system_engineering-devops/tree/master/command_line_for_the_win)
 
-    This project is an **exercise** on how to use the command line or
-    terminal to perform some tasks.
+    Using the command line to perform basic task.
