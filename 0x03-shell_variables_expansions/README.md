@@ -1,7 +1,7 @@
 
 # 0x03. Shell, init files, variables and expansions
 
-In this project, how to set and unset environment variables were discussed. Also, how command expansion works in shell were discussed.
+Introduction to environment variables and expansions on Linux.
 
 ## Tasks
 
