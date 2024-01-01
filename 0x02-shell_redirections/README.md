@@ -1,8 +1,7 @@
 
 # 0x02. Shell, I/O Redirections and filters
 
-This project is an introduction to shell redirection.
-How to redirect outputs and inputs were discussed in this project.
+Introduction to redirections on Linux.
 
 ## Tasks
 
