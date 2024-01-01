@@ -1,7 +1,7 @@
 
 # 0x06. Regular expression
 
-Regular expressions or Regex were introduced in this project. How to write and read regular expressions were also discussed.
+Introduction to Linux processes and signals.
 
 ## Tasks
 
