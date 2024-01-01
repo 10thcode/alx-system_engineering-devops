@@ -1,7 +1,7 @@
 
 # 0x08. Networking basics #1
 
-This project introduced how to work with networking utilities like nc and netstat.
+Working with networking utilities.
 
 ## Tasks
 
