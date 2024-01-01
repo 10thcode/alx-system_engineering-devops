@@ -1,8 +1,7 @@
 
 # 0x01. Shell, permissions
 
-This project is an introduction to permissions on Linux operating system.
-How to check, add and remove permissions in Bash were discussed in this project.
+Adding and removing file permissions on Linux.
 
 ## Tasks
 
